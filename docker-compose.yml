@@ -1,0 +1,18 @@
+services:
+  server:
+    build:
+      context: ./server
+    restart: unless-stopped
+    env_file:
+      - .env
+    expose:
+      - "3001"
+
+  web:
+    build:
+      context: ./web
+    restart: unless-stopped
+    depends_on:
+      - server
+    ports:
+      - "80:80"
