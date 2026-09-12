@@ -1,20 +1,16 @@
 {
   "name": "fractal2-server",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "start": "tsx src/index.ts"
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "technicalindicators": "^3.1.0"
-  },
-  "devDependencies": {
-    "tsx": "^4.20.3",
-    "typescript": "^5.9.2"
   }
 }
