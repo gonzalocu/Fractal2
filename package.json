@@ -1,0 +1,16 @@
+{
+  "name": "fractal2",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Bitcoin RSI + MACD multi-timeframe alerts with Telegram notifications",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "server": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
