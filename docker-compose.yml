@@ -3,8 +3,6 @@ services:
     build:
       context: ./server
     restart: unless-stopped
-    env_file:
-      - .env
     expose:
       - "3001"
 
